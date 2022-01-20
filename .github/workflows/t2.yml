@@ -1,0 +1,10 @@
+name: Access files
+on:
+  push:
+   
+jobs:
+  build:
+    name: Check the contents of the file
+    runs-on: ubuntu-latest
+    steps:
+      - run: cat test.txt
